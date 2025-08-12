@@ -1,3 +1,5 @@
+# Laravel 12 + Sail 環境を mkcert + Nginx でSSL化【Docker 開発環境】
+
 ローカル開発でLaravelをHTTPS化（SSL化）したくて、**mkcert + Nginx** という構成で試してみました。**なぜこの構成を選んだのか**という比較や、  
 実際の設定手順、やってみて気づいたことをまとめます。本番環境ではなく、あくまで**Docker + Laravel Sailを使ったローカル開発用のSSL化**です。
 
