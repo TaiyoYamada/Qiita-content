@@ -469,6 +469,7 @@ return [
 統一インターフェース：
 
 <details><summary>ChatAIService</summary>
+
 ```swift
 class ChatAIService {
     static let shared = KumamonAIService()
@@ -538,6 +539,7 @@ class ChatAIService {
 
 
 <details><summary>ChatAIViewModel（状態管理）</summary>
+
 ```swift
 @MainActor
 final class KumamonAIViewModel: ObservableObject {
@@ -791,5 +793,5 @@ export AI_PROVIDER=gemini
 
 ## まとめ
 
-今回、開発環境では Docker + Ollama を、本番環境では Gemini API を使い分ける仕組みを導入しました。環境変数ひとつで切り替えられるようにしたことで、開発中はコストをかけずに好きなだけ試せて、本番では安定したサービスを利用できる柔軟な構成になりました。
+今回、開発環境では Docker + Ollama を、本番環境では Gemini API を使い分ける仕組みを導入しました。
 ローカル実行ならではのCPU負荷やレスポンス速度の課題はありますが、UIテストや開発サイクルの高速化には十分役立ちました。個人開発やプロトタイプの段階では特に有効なアプローチだと感じています。
